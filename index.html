@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Single Product Page</title>
+</head>
+
+<body>
+
+    <div id="diceGame">
+        <div id="player">
+            <h2 id="playerName">Player</h2>
+            <div>
+                <img id="playerDice1" src="images/dice_1.png" alt="Player Dice 1" class="dice-img">
+                <img id="playerDice2" src="images/dice_1.png" alt="Player Dice 2" class="dice-img">
+            </div>
+            <p>Score this round: <span id="playerRoundScore"></span></p>
+            <p>Total score: <span id="playerTotalScore"></span></p>
+        </div>
+        <div id="computer">
+            <h2>Computer</h2>
+            <div>
+                <img id="computerDice1" src="images/dice_1.png" alt="Computer Dice 1" class="dice-img">
+                <img id="computerDice2" src="images/dice_1.png" alt="Computer Dice 2" class="dice-img">
+            </div>
+            <p>Score this round: <span id="computerRoundScore"></span></p>
+            <p>Total score: <span id="computerTotalScore"></span></p>
+        </div>
+    </div>
+    <div id="gameButtons">
+        <button id="rollDiceButton">Roll Dice</button>
+        <button id="resetGameButton">Reset Game</button>
+        <p id="winnerMessage"></p>
+    </div>
+
+    <div id="gameRules">
+        <h2>Game Rules:</h2><br>
+        <ol>
+            <li>When two dice comes up as a 1 then the score for that round for the player
+                is 0. Example: if the player rolls a 6 and 1, they get a score of 0</li>
+            <br>
+            <li>If you roll a pair of the same numbers then the players score is the total of the two
+                dice times 2.
+                Example: if he player rolls 5 and 5, they get a score of (5+5)*2=20</li>
+            <br>
+            <li>When you roll any other combination of dice other than the ones mentioned above
+                then the score is the total value of the two dice.
+                Example: player rolls a 3 and 2, player gets a score of 3+2=5</li>
+            <br>
+    </div>
+</body>
+
+<div class="footer">COMP 2132 - Final Project - HT</footer>
+
+</html>
